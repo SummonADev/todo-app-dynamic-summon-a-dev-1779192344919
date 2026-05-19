@@ -1,0 +1,70 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.06);
+}
+
+.completed {
+  opacity: 0.6;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.checkbox {
+  margin-top: 2px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.checkedIcon {
+  color: var(--success);
+}
+
+.uncheckedIcon:hover {
+  color: var(--primary);
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: 500;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.meta {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deleteBtn {
+  flex-shrink: 0;
+  color: #94a3b8;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.deleteBtn:hover {
+  color: var(--danger);
+  background: #fee2e2;
+}
